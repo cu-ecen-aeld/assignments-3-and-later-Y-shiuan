@@ -3,8 +3,8 @@
 # Author: Siddhant Jajoo
 
 # 确保在 finder-app 目录中编译
-make clean -C finder-app
-make -C finder-app
+make clean
+make
 
 set -e
 set -u
@@ -56,10 +56,10 @@ fi
 
 for i in $( seq 1 $NUMFILES)
 do
-    ./finder-app/writer "$WRITEDIR/${username}$i.txt" "$WRITESTR"
+    ./writer "$WRITEDIR/${username}$i.txt" "$WRITESTR"
 done
 
-OUTPUTSTRING=$(./finder-app/finder.sh "$WRITEDIR" "$WRITESTR")
+OUTPUTSTRING=$(./finder.sh "$WRITEDIR" "$WRITESTR")
 
 # remove temporary directories
 rm -rf /tmp/aeld-data

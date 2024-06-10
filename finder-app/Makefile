@@ -1,7 +1,10 @@
+CC := $(if $(CROSS_COMPILE),$(CROSS_COMPILE)gcc,gcc)
+
 all: writer
 
 writer: writer.c
-	$(CROSS_COMPILE)gcc writer.c -o writer
+	$(CC) writer.c -o writer
 
 clean:
 	rm -f writer *.o
+
