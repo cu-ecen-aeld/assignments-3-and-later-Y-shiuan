@@ -7,4 +7,3 @@ writer: writer.c
 
 clean:
 	rm -f writer *.o
-
