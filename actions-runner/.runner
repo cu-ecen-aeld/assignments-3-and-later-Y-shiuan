@@ -1,0 +1,9 @@
+﻿{
+  "agentId": 2,
+  "agentName": "Ubuntu",
+  "poolId": 1,
+  "poolName": "Default",
+  "serverUrl": "https://pipelinesghubeus24.actions.githubusercontent.com/hyvd4xYfpxfhCLLev9cB2itJttXRTXxFIeriU9J1SpCSIaLn6z/",
+  "gitHubUrl": "https://github.com/cu-ecen-aeld/assignments-3-and-later-Y-shiuan",
+  "workFolder": "_work"
+}
